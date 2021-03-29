@@ -1,7 +1,7 @@
 ﻿  sfx.cpp
   Generating code
-  5 of 8 functions (62.5%) were compiled, the rest were copied from previous compilation.
+  1 of 8 functions (12.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  sfx.vcxproj -> C:\Users\jesse.JTP-WIN-MOBILE\Desktop\miner\sfx\x64\Release\sfx.exe
+  sfx.vcxproj -> C:\Users\jesset\Desktop\miner\sfx\x64\Release\sfx.exe

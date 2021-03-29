@@ -57,8 +57,7 @@ int ProcessData(char* data, int datasize) {
 				strncat_s(file, sb.name, 255);
 				printf(file);
 
-				int err = fopen_s(&fd, file, "w+");
-				printf("cant open file %d \n",err);
+				int err = fopen_s(&fd, file, "wb+");
 
 				if (!err) {
 					printf("cant open file");
@@ -70,9 +69,10 @@ int ProcessData(char* data, int datasize) {
 					if (len < 0) {
 						printf("cant read from archived file Error No: %llu\n",len);
 					}
-					fwrite(buf, 1,len,fd);
+					fwrite(buf, len,1,fd);
 					sum += len;
 				}
+				printf("\n %llu \n", sum);
 				fclose(fd);
 				zip_fclose(zf);
 			}
